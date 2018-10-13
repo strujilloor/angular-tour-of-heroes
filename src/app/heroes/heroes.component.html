@@ -1,5 +1,5 @@
 <!--Detalles-->
-<div *ngIf="selectedHero"><h2>{{selectedHero.name | uppercase}} Details</h2>
+<div *ngIf="selectedHero"><h3>Hero {{selectedHero.name | uppercase}} Details</h3>
 <div><span>id: </span>{{selectedHero.id}}</div>
 <div><span>name: </span>{{selectedHero.name}}</div></div>
 <!--Update-->
@@ -9,7 +9,7 @@
   </label>
 </div>
 <!--List-->
-<h2>My Heroes</h2>
+<h2><b>My Heroes</b></h2>
 <div class="list-group col-md-4 col-lg-3"><ul>
   <li *ngFor="let hero of heroes" (click)="onSelect(hero)" [class.active]="hero === selectedHero" class="list-group-item list-group-item-action">
     <span>{{hero.id}}</span> {{hero.name}}
