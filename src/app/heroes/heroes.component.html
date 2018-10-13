@@ -10,7 +10,7 @@
 
 <h2>My Heroes</h2>
 <div class="list-group col-sm-3"><ul>
-  <li *ngFor="let hero of heroes" class="list-group-item list-group-item-action">
+  <li *ngFor="let hero of heroes" (click)="onSelect(hero)" class="list-group-item list-group-item-action">
     <span>{{hero.id}}</span> {{hero.name}}
   </li>
 </ul></div>
